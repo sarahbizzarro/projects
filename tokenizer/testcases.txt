@@ -1,0 +1,73 @@
+test cases
+assignment 1
+
+case 1:
+cmd input:
+	"\n" "Hello\nWorld"
+output:
+	hello
+   	world
+
+case 2:
+cmd input:
+	"\n\\\"" "this\n\\my in\n put"
+output:
+	this
+   	my in
+   	 put
+
+case 3:
+cmd input:
+	" \n" "my new line character is \n"
+output:
+	my
+	new
+	line
+	character
+	is
+
+case 4:
+cmd input:
+	"i" "mississippi"
+output:
+	m
+	ss
+	ss
+	pp
+
+case 5: 
+cmd input:
+	"\"" "\\t\\backslash\\r"
+output:
+	[0x09][0x08]ackslash[0x0d]
+	
+case 6:
+cmd input:
+	"" "\r\a \foo"
+output:
+	[0x0d][0x07] [0x0c]oo
+
+case 7:
+cmd input:
+	"s" "she sells sea shells by the sea shore"
+output:
+	he 
+	ell
+	 
+	ea 
+	hell
+	 by the 
+	ea 
+	hore
+
+case 8:
+cmd input:
+	".ft" "i ate a. lot. of. french fries\!"
+output:
+	i a
+	e a
+	 lo
+	 o
+	 
+	rench 
+	ries!
